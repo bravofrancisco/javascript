@@ -98,7 +98,6 @@ Objetivo: Crear un symbol que represente un identificador único para un product
 let idProductos = Symbol("androind");
 console.log(idProductos);
 
-
 /**
  * Ejercicio 7: Realizar una operación con bigint
 Objetivo: Usar un bigint para calcular la suma de dos números grandes y mostrar el resultado.
@@ -106,4 +105,15 @@ Objetivo: Usar un bigint para calcular la suma de dos números grandes y mostrar
 let numero1 = 1234567890123456789012345678901234567890n;
 let numero2 = 9876543210987654321098765432109876543210n;
 let suma = numero1 + numero2;
-console.log(suma);  // Resultado esperado: 11111111101111111110111111111011111111100n
+console.log(suma); // Resultado esperado: 11111111101111111110111111111011111111100n
+
+/**
+ * Ejercicio 8: Imprimir si una persona tiene una licencia de conducir
+Objetivo: Usar un boolean para imprimir un mensaje sobre si una persona tiene o no una licencia de conducir.
+ */
+let licenciaConducir = false;
+if (licenciaConducir) {
+  console.log("la persona tiene una licencia de conducir");
+} else {
+  console.log("no tiene licencia");
+}
