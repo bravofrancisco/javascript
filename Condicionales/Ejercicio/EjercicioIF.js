@@ -55,18 +55,9 @@ function evaluarNota(nota) {
 }
 
 // Ejemplo de ejecución:
-evaluarNota(10);  // Mención honorífica
-evaluarNota(7);   // Aprobó
-evaluarNota(4);   // Reprobó
-
-
-
-
-
-
-
-
-
+evaluarNota(10); // Mención honorífica
+evaluarNota(7); // Aprobó
+evaluarNota(4); // Reprobó
 
 // Problema 6: Escribe un programa que reciba un número y determine si es divisible por 4, 5 o ninguno.
 
@@ -102,10 +93,8 @@ function ProgramImparMayor(numerox) {
   } else {
     mensaje += "El número " + numerox + " es igual a 100.\n";
   }
-
   return mensaje; // Devolvemos el mensaje completo
 }
-
 const resultado = ProgramImparMayor(1121);
 console.log(resultado); // Ahora puedes imprimir el resultado
 
