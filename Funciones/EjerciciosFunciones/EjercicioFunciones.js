@@ -106,9 +106,49 @@ console.log(promedio(resultadoArray));
  * 6. Ejercicio de cuenta atrás
 Crea una función llamada cuentaAtras que reciba un número n y haga una cuenta regresiva hasta llegar a 0, imprimiendo cada número en consola. Utiliza recursión para resolver este ejercicio.
  */
-function cuentaAtras(n){
+// function cuentaAtras(n){
 
+// }
+// const cuenta = cuentaAtras(5);
+// console.log(cuenta);
+//
+
+/**
+ * Problema 1: Cálculo de área y perímetro de un círculo
+Escribe dos funciones:
+
+calcularArea(radio): Esta función debe aceptar como parámetro el radio de un círculo y devolver el área. La fórmula para calcular el área de un círculo es:
+ */
+function calcularArea(radio) {
+  let pi = 3.14159;
+  let area = pi * (radio * radio);
+
+  return area;
 }
-const cuenta = cuentaAtras(5);
-console.log(cuenta);
-// 
+let resultado = calcularArea(2);
+console.log(resultado);
+
+/**
+ * calcularPerimetro(radio): Esta función debe aceptar como parámetro el radio de un círculo y devolver el perímetro. La fórmula para calcular el perímetro de un círculo es:
+ */
+function calcularPerimetro(radio2) {
+  let pi2 = 3.14159;
+
+  let perimetro = 2 * (pi2 * radio2);
+
+  return perimetro;
+}
+let resultado2 = calcularPerimetro(2);
+console.log(resultado2);
+
+console.log("Grados celsius a fahrenheit");
+
+function esPar(numeros) {
+  if (numeros % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const resultPar = esPar(1);
+console.log(resultPar);
