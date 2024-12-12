@@ -90,3 +90,33 @@ Instrucciones:
 Usa reduce() para recorrer el array de palabras.
 El acumulador será un objeto que contiene como claves las palabras y como valores la cantidad de veces que aparece cada palabra.
  */
+const palabra = ["manzana", "naranja", "manzana", "pera", "naranja", "manzana"];
+const contarPalabra = palabra.reduce((acumulador, valorActual) => {
+  if (acumulador[valorActual]) {
+    acumulador[valorActual]++;
+  } else {
+    acumulador[valorActual] = 1;
+  }
+  return acumulador;
+}, {});
+console.log(contarPalabra);
+
+/**
+ * Ejercicio 3: Transformar un array de objetos en un solo objeto
+Dado un array de objetos, usa reduce() para combinar todos los objetos en uno solo. Cada objeto contiene información de un producto, con una clave id y un valor name. El resultado debe ser un objeto donde las claves sean los id y los valores sean los name.
+
+Instrucciones:
+
+Usa reduce() para recorrer el array de objetos.
+El resultado debe ser un objeto donde cada propiedad tiene el id como clave y el name como valor.
+ */
+const producto = [
+  { id: 1, nombre: "manaza" },
+  { id: 2, nombre: "pera" },
+  { id: 3, nombre: "naranja" },
+];
+const productObject =producto.reduce((acumulador, valorActual) => {
+  acumulador[valorActual.id] = valorActual.nombre;
+  return acumulador;
+}, {});
+console.log(productObject);

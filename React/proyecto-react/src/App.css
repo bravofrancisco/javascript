@@ -1,0 +1,202 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+  }
+  
+  /* Sección de contenido */
+  section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Estilos para los componentes de experiencia y educación */
+  h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Lista de experiencias y educación */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  li h3 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries para hacer la aplicación responsive */
+  @media (max-width: 768px) {
+    .App {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    li {
+      padding: 15px;
+    }
+  
+    li h3 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  /* Estilos para la Línea de Tiempo */
+.timelapse {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .timelapse h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 10px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-dot {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+  }
+  
+  .timeline-content {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .timeline-content h3 {
+    color: #2980b9;
+    font-size: 1.25rem;
+  }
+  
+  .timeline-content p {
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries para la Línea de Tiempo */
+  @media (max-width: 768px) {
+    .timeline {
+      max-width: 100%;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline-dot {
+      left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .timeline-content h3 {
+      font-size: 1.1rem;
+    }
+  
+    .timeline-content p {
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
