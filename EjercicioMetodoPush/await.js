@@ -85,14 +85,11 @@ async function fetchMultiplePosts() {
 fetchMultiplePosts();
 
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  
-  async function delayedGreeting() {
-    await delay(2000); // Espera 2 segundos
-    console.log('¡Hola después de 2 segundos!');
-  }
-  
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-  delayedGreeting();
-  
+async function delayedGreeting() {
+  await delay(2000); // Espera 2 segundos
+  console.log("¡Hola después de 2 segundos!");
+}
+delayedGreeting();
