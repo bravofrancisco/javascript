@@ -1,0 +1,17 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de configuración de Node.js
+package.json
+package-lock.json
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos temporales de editores
+.vscode/
+.idea/
+
+# Ignorar archivos de compilación
+dist/
+build/
